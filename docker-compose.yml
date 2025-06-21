@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  memory-api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./audit_logs:/app/audit_logs
